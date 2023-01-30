@@ -17,6 +17,8 @@ public class WhatsappRepository {
     private HashMap<Group, String> adminMap;
     private HashSet<String> userMobile;
     private HashSet<String> groupUsers;
+
+    private List<Message> newMessage = new ArrayList<>();
     private int customGroupCount;
     private int messageId;
 
@@ -94,7 +96,7 @@ public class WhatsappRepository {
         if(!flag){
             throw new Exception("You are not allowed to send message");
         }
-        List<Message> newMessage = new ArrayList<>();
+
 //        if(groupUserMap.containsKey(group)){
 //            newMessage = groupUserMap
 //        }
