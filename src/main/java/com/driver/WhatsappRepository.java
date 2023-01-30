@@ -33,7 +33,7 @@ public class WhatsappRepository {
 
     public String CreateUser(String name, String mobile) throws Exception{
            if (userMobile.contains(mobile)) {
-               throw new Exception("User already exists");
+               throw new Exception("User already exists.");
            }
         userMobile.add(mobile);
 //        userDb.put(name,mobile);
@@ -82,7 +82,7 @@ public class WhatsappRepository {
         //If the message is sent successfully, return the final number of messages in that group.
 
         if(!groupUserMap.containsKey(group)){
-            throw new Exception("Group does not exist");
+            throw new Exception("Group does not existgit");
         }
         boolean flag = false;
         List<User> users = groupUserMap.get(group);
