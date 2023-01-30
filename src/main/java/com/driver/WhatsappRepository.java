@@ -82,7 +82,7 @@ public class WhatsappRepository {
         //If the message is sent successfully, return the final number of messages in that group.
 
         if(!groupUserMap.containsKey(group)){
-            throw new Exception("Group does not existgit");
+            throw new Exception("Group does not exist");
         }
         boolean flag = false;
         List<User> users = groupUserMap.get(group);
